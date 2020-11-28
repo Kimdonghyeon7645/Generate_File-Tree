@@ -1,6 +1,19 @@
 # print file tree : 트리구조 출력하는 스크립트
 
 ## 개요
+![image](https://user-images.githubusercontent.com/48408417/100516843-0c08f300-31ca-11eb-8bab-ac68187e539a.png)
+```markdown
+##### 마크다운으로 옮긴 결과
+📦 test_folder
+ ┣ 📁 outter_folder
+ ┃ ┣ 📁 inner_folder
+ ┃ ┃ ┗ 📜 tests_in_inner.txt
+ ┃ ┗ 📜 tests_in_outter.txt
+ ┣ 📁 outter_folder_2
+ ┃ ┗ 📁 inner_folder_2
+ ┃   ┗ 📜 encapsulated.txt
+ ┗ 📜 tests.txt
+```
 원하는 폴더 위치를 트리 구조로 출력하는 파이썬 스크립트!
 
 ## 동기

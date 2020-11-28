@@ -10,7 +10,7 @@ def print_tree(path: str, posit: list, icon_mode: int):
     for node in contain:
         head = [" ┃" if i else "  " for i in posit]
         head.append(" ┗ " if node == contain[-1] else " ┣ ",)
-        if icon_mode is 1:
+        if icon_mode == 1:
             head.append("\N{file folder} " if node.is_dir() else "\N{scroll} ")
 
         print(*head, node.name, sep="")
@@ -22,7 +22,7 @@ def print_tree(path: str, posit: list, icon_mode: int):
 if __name__ == '__main__':
     base_path, mode = "", 0
 
-    if len(sys.argv) is 3:
+    if len(sys.argv) == 3:
         base_path, mode = sys.argv[1:3]
     else:
         base_path = input("원하는 경로를 입력하세요 : ")

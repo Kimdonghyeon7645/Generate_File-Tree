@@ -26,10 +26,11 @@ if __name__ == '__main__':
         base_path, mode = sys.argv[1:3]
     else:
         base_path = input("원하는 경로를 입력하세요 : ")
-        mode = input("원하는 모드를 입력하세요 (0= 아이콘없이, 1= 심플아이콘, 2= 다양한아이콘(html) : ")
+        mode = input("원하는 모드를 입력하세요 (0= 아이콘없이, 1= 심플아이콘) : ")
 
-    base_head = "\N{package} " if mode in '12' else "",
+    base_head = "\N{package} " if mode == '1' else "",
     base_name = base_path.split("\\")[-1]
-    print(base_head, base_name, sep="")
+    print(*base_head, base_name, sep="")
 
     print_tree(base_path, [], int(mode))
+    os.system("pause")

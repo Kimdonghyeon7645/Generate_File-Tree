@@ -17,7 +17,7 @@ def test_print_tree(path: str, posit: list):
     for node in contain:
         print(*["┃" if i else " " for i in posit],
               "┗" if node == contain[-1] else "┣",
-              node.name, posit)
+              node.name)
         if node.is_dir():
             test_print_tree(node.path, posit + [contain[-1] != node])
 

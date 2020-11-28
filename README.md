@@ -1,9 +1,8 @@
 # print file tree : 트리구조 출력하는 스크립트
 
 ## 개요
-![image](https://user-images.githubusercontent.com/48408417/100516843-0c08f300-31ca-11eb-8bab-ac68187e539a.png)
 ```markdown
-##### 마크다운으로 옮긴 결과
+###### 트리구조 출력 결과
 📦 test_folder
  ┣ 📁 outter_folder
  ┃ ┣ 📁 inner_folder
@@ -31,15 +30,3 @@
 
 근데, 생각해보니 파이썬의 ```os``` 라이브러리를 이용한다면, 나도 이런 기능을 파이썬 스크립트로 만들 수 있지 않나 싶어,  
 목마른 사람이 우물파듯이, 직접 원하는 기능을 보완한 스크립트를 만들었다.
-
-```markdown
-📦 C:\Users\user\Documents\print_folder_as_tree\test_folder
- ┣ 📁 outter_folder
- ┃ ┣ 📁 inner_folder
- ┃ ┃ ┗ 📜 tests_in_inner.txt
- ┃ ┗ 📜 tests_in_outter.txt
- ┣ 📁 outter_folder_2
- ┃ ┗ 📁 inner_folder_2
- ┃   ┗ 📜 encapsulated.txt
- ┗ 📜 tests.txt
-```
